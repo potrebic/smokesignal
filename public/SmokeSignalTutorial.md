@@ -80,7 +80,7 @@ The Smoke Signal Service then uses the Campfire APIs to monitor activity and imp
 
 One-time configuration is handled through a little "setup" application like so:
 
-![](./images/SmokeSignalSetup.png)
+![](images/SmokeSignalSetup.PNG)
 
 After the initial setup there is zero maintenance. Smoke Signal adapts to changing rooms and users, automatically reconfiguring itself as needed. It also sends an introductory email/tutorial to new members of your campfire.
 
