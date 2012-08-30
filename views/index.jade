@@ -1,0 +1,76 @@
+extends layout
+
+block content
+  p.pagetitle  Welcome to #{title}
+  section.css-table
+    section.two-column
+      section.cell
+        h6 Problem
+        p.
+          <a href="http://www.campfirenow.com" class="emph">Campfire</a> (by 37Signals) is a wonderful group chat application.
+          I wanted to bring it to my current company,
+          but found it a hard sell because it is easy to miss real time information if you’re not
+          sitting in the campfire rooms all the time. There's no sure fire way to get someone attention.
+          So one weekend back in 2011 I sat down to come up with a solution. My employer didn't have Hack Days so I did
+          one on my own.
+      section.cell
+        h6 Solution
+        p.
+          <a href="http://www.smokesignalnow.com" class="emph">Smoke Signal</a> provides a way to get the attention of other members of the campfire.
+          Hence the name <i>Smoke Signal</i>.
+          If the person sees your message and responds, all is good. But if they don't respond in a timely fashion
+          an email (or SMS) is sent. To initiate a smoke signal just use a &#8220;@<i>Name</i>&#8221; tag anywhere in a campfire posting.
+          Smoke Signal does the rest. Read on to learn more.
+  section.css-table.vspacer
+    p.pagetitle.
+     Interested? Read a bit more below and check out the
+     <a href="/details">Details</a>
+     page.
+  section.css-table.vspacer
+    section.three-column
+      section.cell.SSexample
+        p<b>1. Sending a Smoke Signal</b>
+        p.pspacerabove The screen snippet below shows an example of a smoke signal I sent my son in our family campfire.
+        image(src="images/Callout2.PNG")
+        p For &#8220;Jake Potter&#8221; any of these work:
+        ul
+          li @Jake
+          li @JakePotter
+          li @Potter
+          li @JakeP
+          li @JPotter
+        <br/>
+        p Requirements: it uniquely identifies a member of your campfire and is >=3 characters in length.
+      section.cell
+        p<b>2. Triggering an Email</b>
+        p.pspacerabove.
+          If the called out person enters the campfire room and/or posts a message in a timely fashion then
+          the smoke signal is finished. If after a couple minutes there is no response, the smoke signal email is triggered:
+        :markdown
+          > To: jake@email.com
+
+          > Subject: Smoke Signal - room XYZ,
+
+          >           from Peter
+
+          > Body:
+
+          > https:_url-to-the-campfire-room_
+
+          > @Jake - where's soccer on friday?
+          </br></br>
+          > Sincerely,
+          </br>
+          >Smoke Signal
+      section.cell
+        p<b>3. Configuration</b>
+        p.pspacerabove.
+          The target email address and delay are both configurable directly through campfire.
+          Take a look:
+        image(src="images/SSConfig.PNG")
+        p.
+          The first 2 messages will email you the requested information.
+          The next sets the number of <em>minutes</em> before Smoke Signals
+          are emailed to <em>you</em>. And the last changes your email address.
+        p.pspacerabove.
+          Smoke Signal emails a tutorial to all new members.

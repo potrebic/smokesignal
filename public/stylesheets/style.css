@@ -1,0 +1,280 @@
+/* Based on http://meyerweb.com/eric/thoughts/2008/01/15/resetting-again/
+Removed elements not supported in HTML5
+-----------------------------------------------------------------------------*/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+article,
+aside,
+dialog,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  text-align: center;
+  background: #fff;
+  min-width: 1000px;
+}
+#wrapper {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
+  color: #000;
+  padding: 20px;
+}
+h1 {
+  font-size: 2em;
+  line-height: 0.9em;
+  margin-bottom: 0.9em;
+}
+h2 {
+  font-size: 1.8em;
+  line-height: 1em;
+  margin-bottom: 0.3em;
+  margin-top: 0.5em;
+}
+h6 {
+  font-size: 1.2em;
+  line-height: 1.2em;
+  margin-bottom: 0.8em;
+}
+p,
+q,
+cite,
+address,
+ul,
+ol,
+dl,
+blockquote {
+  font-size: 0.9em;
+  line-height: 1.2em;
+}
+a {
+  text-decoration: underline;
+  outline: none;
+}
+a:hover {
+  text-decoration: none;
+}
+code,
+samp,
+dfn,
+kbd,
+var,
+acronym,
+ins,
+del,
+abbr {
+  speak: spell-out;
+}
+acronym {
+  speak: normal;
+}
+.css-table {
+  width: 100%;
+  display: table;
+}
+.css-table img {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+.css-table .two-column {
+  display: table-row;
+}
+.css-table .two-column .cell {
+  display: table-cell;
+  vertical-align: top;
+  width: 50%;
+}
+.css-table .two-column .cell * {
+  width: 90%;
+}
+.css-table .three-column {
+  display: table-row;
+}
+.css-table .three-column .cell {
+  display: table-cell;
+  width: 33.33333%;
+}
+.css-table .three-column .cell * {
+  width: 90%;
+}
+.css-table .three-column .narrow {
+  display: block;
+  width: 64px;
+  height: 64px;
+}
+.css-table .three-column .wide {
+  width: 60%;
+}
+.css-table .four-column {
+  display: table-row;
+}
+.css-table .four-column .cell {
+  display: table-cell;
+  width: 25%;
+}
+.SSexample ul {
+  padding-top: 0.4em;
+  list-style-type: none;
+  padding-left: 2em;
+  font-size: 0.7em;
+  width: 18em !important;
+  line-height: 1.5em;
+}
+.SSexample ul li {
+  padding-bottom: 0.4em;
+  float: left;
+  width: 7em !important;
+}
+.SSexample br {
+  clear: left;
+}
+header {
+  padding-left: 50px;
+  background: #ccccab;
+  color: #000;
+  padding-top: 1em;
+}
+header nav {
+  width: 1000px;
+  text-align: right;
+  margin-left: auto;
+  margin-right: auto;
+}
+header nav ul {
+  list-style-type: none;
+  padding: 10px;
+}
+header nav ul li {
+  display: inline;
+  padding: 0.1em 0.5em;
+}
+header nav ul li a {
+  color: #000;
+}
+footer {
+  color: #666;
+  border-top: 1px solid #ccc;
+  background: #ccccab;
+  padding-top: 1.5em;
+  padding-bottom: 0.1em;
+}
+footer a {
+  color: #000;
+}
+p#copyright {
+  padding-top: 0.5em;
+}
+#banner {
+  font-size: 4em;
+  font-family: Georgia, serif;
+  text-align: left;
+  padding: 0em;
+  margin: 0em;
+}
+.pagetitle {
+  text-align: center;
+  font-size: 1.3em;
+  line-height: 1.38em;
+  margin-bottom: 1em;
+}
+.vspacer {
+  padding-top: 3em;
+}
+.pspacerabove {
+  padding-top: 0.5em;
+}
+.emph {
+  font-weight: bold;
+}
+blockquote {
+  margin: 1em 1em;
+  color: #777;
+  border-left: 2px solid #999;
+  padding-left: 1em;
+}
+#tutorial h1 {
+  display: none;
+}
+#tutorial p {
+  margin-bottom: 0.7em;
+}
+#tutorial hr {
+  margin-bottom: 2em;
+}
+#tutorial ul {
+  list-style-type: none;
+  padding-left: 3em;
+  padding-bottom: 1em;
+  line-height: 1.2em;
+}
+#tutorial ul li {
+  padding-bottom: 0.3em;
+}
