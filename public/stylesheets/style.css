@@ -78,9 +78,9 @@ body {
   font-family: Verdana, Geneva, sans-serif;
   text-align: center;
   background: #fff;
-  min-width: 1000px;
 }
 #wrapper {
+  min-width: 800px;
   text-align: left;
   margin-left: auto;
   margin-right: auto;
@@ -183,7 +183,7 @@ acronym {
 .SSexample ul {
   padding-top: 0.4em;
   list-style-type: none;
-  padding-left: 2em;
+  padding-left: 3em;
   font-size: 0.7em;
   width: 18em !important;
   line-height: 1.5em;
@@ -191,7 +191,7 @@ acronym {
 .SSexample ul li {
   padding-bottom: 0.4em;
   float: left;
-  width: 7em !important;
+  width: 9em !important;
 }
 .SSexample br {
   clear: left;
@@ -199,6 +199,7 @@ acronym {
 header {
   padding-left: 50px;
   background: #ccccab;
+  min-width: 900px;
   color: #000;
   padding-top: 1em;
 }
@@ -221,6 +222,7 @@ header nav ul li a {
 }
 footer {
   color: #666;
+  min-width: 900px;
   border-top: 1px solid #ccc;
   background: #ccccab;
   padding-top: 1.5em;

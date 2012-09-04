@@ -80,12 +80,11 @@ The Smoke Signal Service then uses the Campfire APIs to monitor activity and imp
 
 One-time configuration is handled through a little "setup" application like so:
 
-![](images/SmokeSignalSetup.PNG)
+![](images/SmokeSignalSetup.png)
 
 After the initial setup there is zero maintenance. Smoke Signal adapts to changing rooms and users, automatically reconfiguring itself as needed. It also sends an introductory email/tutorial to new members of your campfire.
 
 In order for Email to work your smtp config needs to support relays. The Setup app has a “test” button so you can double check any configuration. It’s all pretty simple, so it should be self explanatory. Since this setup app is controlling an installed Windows Service is must run with elevated privileges.
 
 Please send any questions or feedback on Smoke Signal to Potrebic “@” nodoto “.” com.
-
 

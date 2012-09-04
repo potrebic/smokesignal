@@ -1,11 +1,13 @@
+var marked = require('marked');
+var fs = require('fs');
+
 // GET home page
 exports.index = function(req, res){
     console.log("rendering the index page: " + req.url);
-  res.render('index', { title: 'Smoke Signal' });
+    var sampleName = "Jake Potter";
+    var calloutForms = ["Jake", "Potter", "JPotter", "JakeP", "JakePotter"];
+    res.render('index', { title: 'Smoke Signal', sampleName: sampleName, calloutForms: calloutForms });
 };
-
-var marked = require('marked');
-var fs = require('fs');
 
 // GET Details page
 exports.details = function(req, res){

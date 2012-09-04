@@ -24,14 +24,16 @@ footer, header, hgroup, menu,
 nav, section
   display block
 
+body-min-width(n)
+  min-width 900px + n
 
 body
   font-family Verdana, Geneva, sans-serif
   text-align center
   background #FFFFFF
-  min-width 1000px
 
 #wrapper
+  body-min-width(-100)
   text-align left
   margin-left auto
   margin-right auto
@@ -112,20 +114,22 @@ acronym
   ul
     padding-top .4em
     list-style-type none
-    padding-left 2em
+    padding-left 3em
     font-size .7em
     width 18em !important
     line-height 1.5em
     li
       padding-bottom .4em
       float left
-      width 7em !important
+      width 9em !important
   br
     clear left
 
 header
   padding-left 50px
   background #CCCCAB
+  //min-width 900px
+  body-min-width(0)
   color #000
   padding-top 1em
   nav
@@ -144,6 +148,8 @@ header
 
 footer
   color #666
+  //min-width 900px
+  body-min-width(0)
   border-top 1px solid #ccc
   background #CCCCAB
   padding-top 1.5em

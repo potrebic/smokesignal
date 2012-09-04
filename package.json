@@ -9,6 +9,8 @@
     "express": "3.0.0rc3",
     "jade": "*",
     "stylus": "*",
-	"marked": "*"
+    "marked": "*",
+    "restify": "*",
+    "node-campfire": "0.0.1"
   }
 }
